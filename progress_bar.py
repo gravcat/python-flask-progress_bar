@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('progress_bar.html', progress=22)
+    return render_template('progress_bar.html', progress=25, progress_2=75)
 
 if __name__ == '__main__':
     # bind to env/heroku provided port, otherwise default 5000
